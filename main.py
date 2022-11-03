@@ -3,10 +3,10 @@ import openai
 from googletrans import Translator
 from gtts import gTTS
 import playsound
-
+from credentials import *
 
 # Load your API key from an environment variable or secret management service
-openai.api_key = "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"
+openai.api_key = key
 
 
 def DiscussionEN():
@@ -57,4 +57,4 @@ def DiscussionFR():
             translator.translate(new, dest='en').text + "\nAI:"
 
 
-DiscussionFR()
+DiscussionEN()
