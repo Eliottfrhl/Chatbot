@@ -25,7 +25,7 @@ def DiscussionEN():
             stop=[" Human:", " AI:"]
         )
         print("\nAI: "+response["choices"][0]["text"]+"\n")
-        new = input("Human:")
+        new = input("Human: ")
         promptIni += " " + \
             response["choices"][0]["text"]+"\nHuman: "+new + "\nAI:"
 
